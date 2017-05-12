@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Click the button to display more information on this page</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="test"></p>
+
+    <script>
+      function myFunction() {
+        var changingWordsWhenAlertBoxAppears;
+        if(confirm("Press a button!")== true)
+        {
+          changingWordsWhenAlertBoxAppears = "You pressed OK!, now you are going to see more stuff!!";
+        }
+        else {
+          changingWordsWhenAlertBoxAppears= "Why did you press cancel, you hurt my feelings.";
+        }
+        document.getElementById.("test").innerHTML = changingWordsWhenAlertBoxAppears;
+      }
+    </script>
+  </body>
+</html>

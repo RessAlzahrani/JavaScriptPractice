@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Click the button so we can take your information and sell it to third party vendors.</p>
+
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="name"></p>
+
+    <script>
+    function myFunction()
+    {
+      var nameEntered = prompt("Please enter your name", "Example: John Smith");
+
+      if(nameEntered != null)
+      {
+        document.getElementById("name").innerHTML = "Hello " + nameEntered + "! How are you today?"
+      }
+    }
+    </script>
+  </body>
+</html>
